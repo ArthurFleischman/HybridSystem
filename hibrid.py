@@ -10,7 +10,6 @@ w = mymlpr()
 new = x+y+z+w
 new = new/4
 q = range(len(new))
-plt.plot(q, x, label='AR')
 plt.plot(q, y, label='PSO-SVR')
 plt.plot(q, z, label='GRID-SVR')
 plt.plot(q, w, label='MLPR')
