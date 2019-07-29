@@ -34,17 +34,6 @@ def mysvr():
     predicts = model.predict(x_test)
 
     x = range(len(predicts))
-    '''
-    plt.plot(x, predicts, label='PSO SVR')
-    plt.plot(x, best_predicts, label='GRID SVR')
-    plt.plot(x, y_test, label='Real')
-    plt.legend()
-    plt.title("The Walt Disney Company (DIS) Stock Prices")
-    plt.xlabel('Time')
-    plt.ylabel('Price')
-    print('plotting')
-    plt.show()
-    '''
     return (predicts, best_predicts)
 
 

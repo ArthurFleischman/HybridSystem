@@ -3,9 +3,6 @@ from sklearn.metrics import mean_squared_error as MSE
 
 
 def gridSVR(x_train, y_train, x_val, y_val):
-    '''
-    this function gets the train and test parameter and return the data
-    '''
     c_r = list(range(-5, 6))
     eps_r = list(range(-5, 6))
     gama_r = list(range(-5, 6))

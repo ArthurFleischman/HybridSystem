@@ -4,7 +4,7 @@ import pandas as pd
 
 def prepro(dim, data):
     '''
-    preprocessing and preparing data 
+    preprocessing and preparing data
     '''
     series = pd.Series(data)
     lag = pd.concat([series.shift(i) for i in range(dim+1)], axis=1)

@@ -7,8 +7,7 @@ import numpy as np
 x, i = myar()
 y, z = mysvr()
 w = mymlpr()
-new = x+y+z+w
-new = new/4
+new = (x+y+z+w)/4
 q = range(len(new))
 plt.plot(q, y, label='PSO-SVR')
 plt.plot(q, z, label='GRID-SVR')

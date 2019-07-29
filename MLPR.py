@@ -18,16 +18,6 @@ def mymlpr():
                          activation='relu', alpha=0.01)
     model.fit(x_train, y_train)
     pred = model.predict(x_test)
-    '''
-    x = range(len(y_test))
-    plt.plot(x, y_test, label='Real')
-    plt.plot(x, pred, label='MLPR')
-    plt.title("The Walt Disney Company (DIS) Stock Prices")
-    plt.xlabel('Time')
-    plt.ylabel('Price')
-    plt.legend()
-    plt.show()
-    '''
     return pred
 
 
