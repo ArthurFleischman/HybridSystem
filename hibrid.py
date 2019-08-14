@@ -1,5 +1,5 @@
 from Svr import mysvr
-from AR1 import myar
+from AR import myar
 from MLPR import mymlpr
 from matplotlib import pyplot as plt
 import numpy as np
