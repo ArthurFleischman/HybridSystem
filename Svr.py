@@ -8,10 +8,9 @@ import quandl
 from Pso import pso
 
 
-def mysvr():
+def mysvr(qdata):
     #data = np.loadtxt('airlines2.txt')
-    data = quandl.get("EOD/DIS", authtoken="-L9Dut7Vm4mKvxKxyP_H",
-                      returns="numpy", start_date="2016-12-27", end_date="2017-12-27")
+    data = qdata
     (x_train, y_train, x_val, y_val, x_test, y_test) = prepro(12, data["Open"])
 
     print('initializing grid...')
@@ -33,8 +32,7 @@ def mysvr():
     model.fit(x_train, y_train)
     predicts = model.predict(x_test)
 
-    x = range(len(predicts))
-    return (predicts, best_predicts)
+    return predicts, best_predicts
 
 
 if __name__ == '__main__':

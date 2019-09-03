@@ -7,9 +7,8 @@ import numpy as np
 import quandl
 
 
-def mymlpr():
-    data = quandl.get("EOD/DIS", authtoken="-L9Dut7Vm4mKvxKxyP_H",
-                      start_date="2016-12-27", end_date="2017-12-27")
+def mymlpr(qdata):
+    data = qdata
 
     n_neuronios = 50
     x_train, y_train, x_val, y_val, x_test, y_test = prepro(12, data["Open"])
