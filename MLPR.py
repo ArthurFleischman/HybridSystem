@@ -20,5 +20,5 @@ def mymlpr(qdata):
     return pred
 
 
-if __name__ == '__main__':
-    mymlpr()
+# if __name__ == '__main__':
+#     mymlpr()

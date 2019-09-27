@@ -35,5 +35,5 @@ def mysvr(qdata):
     return predicts, best_predicts
 
 
-if __name__ == '__main__':
-    mysvr()
+# if __name__ == '__main__':
+#     mysvr()
